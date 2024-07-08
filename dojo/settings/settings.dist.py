@@ -1754,6 +1754,8 @@ NOTIFICATIONS_SYSTEM_LEVEL_TRUMP = env("DD_NOTIFICATIONS_SYSTEM_LEVEL_TRUMP")
 warnings.filterwarnings("ignore", message="polymorphic.base.ManagerInheritanceWarning.*")
 warnings.filterwarnings("ignore", message="PolymorphicModelBase._default_manager.*")
 
+# TODO: - remove this, it is only for testing that following error is the only stopper for upgrade to py3.12
+warnings.filterwarnings("ignore", message="pkg_resources is deprecated as an API")
 
 # The setting is here to avoid RemovedInDjango60Warning. It is here only for transition period.
 # TODO: - Remove this setting in Django 6.0
